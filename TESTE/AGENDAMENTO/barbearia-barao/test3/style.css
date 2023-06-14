@@ -1,0 +1,57 @@
+/* Estilo para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para as células da tabela */
+  td, th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Estilo para o cabeçalho da tabela */
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para as linhas ímpares */
+  tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo para as linhas pares */
+  tr:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  /* Estilo para os botões */
+  .button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #428bca;
+    color: #fff;
+  }
+  
+  /* Estilo para o botão de excluir */
+  .button.delete {
+    background-color: #d9534f;
+  }
+  
+  /* Estilo para o botão de editar */
+  .button.edit {
+    background-color: #5cb85c;
+  }
+  

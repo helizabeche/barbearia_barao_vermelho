@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!---->
+        <div class="background-container">
+            <div class="bg-1"></div>
+            <div class="bg-2"></div>
+    
+        </div>
+        <div class="about-container">
+            
+            <div class="image-container">
+                <img src="barber-alan.jpg" alt="">
+                
+            </div>
+
+            <div class="text-container">
+                <h1>SOBRE NÓS</h1>
+                <p class="after-title">
+                    Aqui é o lugar para você se sentir bem, se sentir mais você e ficar ainda mais incrível!
+                </p>
+                <p class="about-text">
+                    Somos uma equipe que nunca para no que foi alcançado e estamos
+                    sempre buscando por inovações. Quando cair nas mãos dos nossos
+                    profissionais, você nunca mais será o mesmo. A nossa equipe está
+                    sempre "na mesma onda" com os clientes. Portanto, estamos sempre
+                    prontos para melhorar a todos que nos procuram! 
+                </p>
+                <a href="">Saiba Mais</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: 'Cormorant Garamond', serif;
+}
+.wrapper{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+}
+.bg-1{
+    flex: 1;
+    background-color: #000;
+}
+.bg-2{
+    flex: 1;
+    background-color: #000;
+}
+.about-container{
+    width: 85%;
+    color: #7f0000;
+    min-height: 80vh;
+    position: absolute;
+    background-color: #0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-container img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: #7f0000;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.text-container h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+    padding: 20px 0px;
+}
+.text-container a{
+    text-decoration: none;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: rgb(117, 7, 7);
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    transition: .3s all ease;
+}
+.text-container a:hover{
+    background-color: transparent;
+    border: 2px solid rgb(107, 3, 3);
+}
+@media screen and (max-width: 1600px){
+    .about-container{
+        width: 90%;
+    }
+    .image-container img{
+        width: 400px;
+        height: 400px;
+    }
+    .text-container h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .about-container{
+        flex-direction: column;
+    }
+    .image-container img{
+        width: 300px;
+        height: 300px;
+    }
+    .text-container {
+        align-items: center;
+    }
+}
+    </style>
+</body>
+</html>
