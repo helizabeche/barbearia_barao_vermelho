@@ -80,7 +80,7 @@
             <div class="side-menu">
                 <ul>
                     <li>
-                       <a href="http://localhost/barbearia-barao/ADM/crud_agendamento/front.php" class="active">
+                       <a href="front.php" class="active">
                             <span class="las la-home"></span>
                             <small>Dashboard</small>
                         </a>
@@ -160,54 +160,57 @@
                 <div class="analytics">
 
                     <div class="card">
-                        <div class="card-head">
-                            <h2>107,200</h2>
-                            
+                        <div class="card-head"> 
+                            <?php include "contagem.php"; ?>   
+                            <h2><?php echo $totalRegistros1; ?></h2>
                             <span class="las la-user-friends"></span>
                         </div>
                         <div class="card-progress">
-                            <small>User activity this month</small>
+                            <small>Total de agendamentos</small>
                             <div class="card-indicator">
-                                <div class="indicator one" style="width: 60%"></div>
+                                <div class="indicator one" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-head">
-                            <h2>340,230</h2>
+                            <?php include "contagem.php"; ?> 
+                            <h2><?php echo $totalPendentes; ?></h2>
                             <span class="las la-eye"></span>
                         </div>
                         <div class="card-progress">
-                            <small>Page views</small>
+                            <small>Agendamentos pendentes</small>
                             <div class="card-indicator">
-                                <div class="indicator two" style="width: 80%"></div>
+                                <div class="indicator two" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-head">
-                            <h2>$653,200</h2>
+                            <?php include "contagem.php"; ?> 
+                            <h2><?php echo $totalPrecos; ?></h2>
                             <span class="las la-shopping-cart"></span>
                         </div>
                         <div class="card-progress">
-                            <small>Monthly revenue growth</small>
+                            <small>Dinheiro</small>
                             <div class="card-indicator">
-                                <div class="indicator three" style="width: 65%"></div>
+                                <div class="indicator three" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-head">
-                            <h2>47,500</h2>
+                            <?php include "contagem.php"; ?>   
+                            <h2><?php echo $totalConcluido; ?></h2>
                             <span class="las la-envelope"></span>
                         </div>
                         <div class="card-progress">
                             <small>New E-mails received</small>
                             <div class="card-indicator">
-                                <div class="indicator four" style="width: 90%"></div>
+                                <div class="indicator four" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
@@ -263,6 +266,7 @@
                                             <th scope="col">Hora</th>
                                             <th scope="col">Profissional</th>
                                             <th scope="col">Status</th>
+                                            <th scope="col">Preço</th>
                                             <th scope="col">Ações</th>
                                         </tr>
                                     </thead>
@@ -279,6 +283,7 @@
                                             echo "<td>".$user_data['hora']."</td>";
                                             echo "<td>".$user_data['profissional']."</td>";
                                             echo "<td>".$user_data['status']."</td>";
+                                            echo "<td>".$user_data['preco']."</td>";
                                             echo "<td>
                                             <a class='btn btn-sm btn-primary' href='edit.php?id=$user_data[id]'>
                                                 <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>

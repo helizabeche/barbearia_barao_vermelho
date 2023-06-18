@@ -152,62 +152,67 @@
             
             <div class="page-content">
             
-                <div class="analytics">
+            <div class="analytics">
 
                     <div class="card">
-                        <div class="card-head">
-                            <h2>107,200</h2>
-                            
+                        <div class="card-head"> 
+                            <?php include "contagem.php"; ?>   
+                            <h2><?php echo $totalRegistros1; ?></h2>
                             <span class="las la-user-friends"></span>
                         </div>
                         <div class="card-progress">
-                            <small>User activity this month</small>
+                            <small>Total de agendamentos</small>
                             <div class="card-indicator">
-                                <div class="indicator one" style="width: 60%"></div>
+                                <div class="indicator one" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-head">
-                            <h2>340,230</h2>
+                            <?php include "contagem.php"; ?> 
+                            <h2><?php echo $totalPendentes; ?></h2>
                             <span class="las la-eye"></span>
                         </div>
                         <div class="card-progress">
-                            <small>Page views</small>
+                            <small>Agendamentos pendentes</small>
                             <div class="card-indicator">
-                                <div class="indicator two" style="width: 80%"></div>
+                                <div class="indicator two" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-head">
-                            <h2>$653,200</h2>
+                            <?php include "contagem.php"; ?> 
+                            <h2><?php echo $totalPrecos; ?></h2>
                             <span class="las la-shopping-cart"></span>
                         </div>
                         <div class="card-progress">
-                            <small>Monthly revenue growth</small>
+                            <small>Dinheiro</small>
                             <div class="card-indicator">
-                                <div class="indicator three" style="width: 65%"></div>
+                                <div class="indicator three" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-head">
-                            <h2>47,500</h2>
-                            <span class="las la-envelope"></span>
+                            <?php include "contagem.php"; ?>   
+                            <h2><?php echo $totalConcluido; ?></h2>
+                            <span class="las la-shopping-cart"></span>
                         </div>
                         <div class="card-progress">
-                            <small>New E-mails received</small>
+                            <small>preço dos agendamentos concluidos</small>
                             <div class="card-indicator">
-                                <div class="indicator four" style="width: 90%"></div>
+                                <div class="indicator four" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
 
-                </div>
+            </div>
+                
+            </div>
 
 
                 <div class="records table-responsive">
