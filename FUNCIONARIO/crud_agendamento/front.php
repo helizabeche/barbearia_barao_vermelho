@@ -93,12 +93,6 @@
                     </li>
                     <li>
                        <a href="">
-                            <span class="las la-user-alt"></span>
-                            <small>Profile</small>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="">
                             <span class="las la-envelope"></span>
                             <small>Mailbox</small>
                         </a>
@@ -172,7 +166,8 @@
                         <div class="card-head">
                             <?php include "contagem.php"; ?> 
                             <h2><?php echo $totalPendentes; ?></h2>
-                            <span class="las la-eye"></span>
+                            <span class="material-symbols-outlined">cancel</span>
+                            
                         </div>
                         <div class="card-progress">
                             <small>Agendamentos pendentes</small>
@@ -230,14 +225,16 @@
                                 </select>
                             <button type="submit">Filtrar</button>
                         </form>
+     
                         </div>
-
                         <div class="relatorio">
                             <form action="relatorio.php" method="post">
                                 <button type="submit">Gerar relatório PDF</button>
                             </form>
 
                         </div>
+
+                        
 
                         <div class="browse">
                             <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar">

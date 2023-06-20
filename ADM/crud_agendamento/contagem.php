@@ -30,14 +30,12 @@ try {
 
             
     // Consulta SQL para somar o preço dos agendamentos concluídos
-    //funcionaaaaaaaaaaaaa por favor 
+    //FUNCIONAAAAA POR FAVORR
     $sql = "SELECT SUM(servicos.preco) AS totalConcluido FROM servicos
     INNER JOIN agendamentos ON servicos.id = agendamentos.servico
     WHERE agendamentos.status = 'concluido'";
     $resultado = $conexao->query($sql);
     $totalConcluido = $resultado->fetch_assoc()['totalConcluido'];
-
-
 
     // Fechar a conexão com o banco de dados
     $conexao->close();

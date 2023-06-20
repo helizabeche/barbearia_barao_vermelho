@@ -73,8 +73,8 @@
         <div class="side-content">
             <div class="profile">
                 <div class="profile-img bg-img" style="background-image: url(img/3.jpeg)"></div>
-                <h4>David Green</h4>
-                <small>Art Director</small>
+                <h4>ADMINISTRADOR 1</h4>
+                <small>área administrativa</small>
             </div>
 
             <div class="side-menu">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio  | Front</title>
+    <title>Barbearia Barão Vermelho</title>
     
    <link rel="stylesheet" href="style.css">
    <script src="https://kit.fontawesome.com/5111783d82.js" crossorigin="anonymous"></script>
@@ -285,21 +285,21 @@
             </div><!--column left-->
             <div class="column rigth">
                 <div class="text">Mensagem</div>
-                <form action="#">
+                <form method="POST" action="enviar.php">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Nome" required>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" required><br><br>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required><br><br>
                         </div>
                     </div>
                     <div class="field">
-                        <div class="field">
-                            <input type="text" placeholder="Sobrenome" required>
                         </div>
                         <div class="field textarea">
-                           <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                           <textarea name="nome" id="nome" cols="30" rows="10" placeholder="Escrever...." required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Enviar</button>

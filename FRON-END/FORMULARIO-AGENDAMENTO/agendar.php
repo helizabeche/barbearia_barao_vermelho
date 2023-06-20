@@ -260,64 +260,7 @@ h1{
 
 </html>
 
-<?php /*
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "barbearia-barao";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-	die("Conexão falhou: " . mysqli_connect_error());
-}
-
-// Verificar se o formulário foi enviado
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-    // Obter dados do formulário
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
-    $profissional = $_POST['profissional'];
-    $servico = $_POST['servico'];
-    $data = $_POST['data'];
-    $horario = $_POST['hora'];
-
-    // Verificar se o profissional e o horário escolhidos estão disponíveis
-    $sql = "SELECT * FROM agendamentos WHERE profissional = '$profissional' AND data = '$data' AND hora = '$horario'";
-    $result = mysqli_query($conn, $sql);
-
-    if (mysqli_num_rows($result) > 0) {
-        // Profissional e horário já estão agendados
-        echo '<div class="mensagem"  id="notificacao">Desculpe, esse horário já está agendado para esse profissional. Por favor, escolha outro horário ou profissional.</div>';
-
-    } else {
-        // Inserir novo agendamento no banco de dados
-        $sql = "INSERT INTO agendamentos (nome, email, telefone, profissional, servico, data, hora) VALUES ('$nome', '$email', '$telefone', '$profissional', '$servico', '$data', '$horario')";
-        if (mysqli_query($conn, $sql)) {
-            // Agendamento realizado com sucesso
-            echo '<div class="mensagem"  id="notificacao"><p>Agendamento realizado com sucesso!</p></div>';
-        } else {
-            // Erro ao realizar agendamento
-            echo '<div class="mensagem"  id="notificacao"><p>Desculpe, ocorreu um erro ao realizar o agendamento. Por favor, tente novamente mais tarde.</p</div>';
-        }
-    }
-
-    // Fechar conexão com o banco de dados
-    mysqli_close($conn);
-} */
-?>
-<script>
-
-const notificacao = document.getElementById('notificacao');
-
-notificacao.addEventListener('click', () => {
-  notificacao.style.display = 'none'; // Oculta a mensagem ao ser clicada
-});
-
-</script> 
-
+ 
 <?php
 
 $servername = "localhost";
