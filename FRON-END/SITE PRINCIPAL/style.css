@@ -257,6 +257,8 @@ section .title::after{
     transition: all 0.3s ease;
     display: grid;
     position: relative;
+    margin: 5px;
+    
 }
 .services .serv-content .card:hover{
     background: #7f0000;
@@ -413,6 +415,34 @@ section .title::after{
 .owl-dot:hover{
     background: #7f0000!important;
 }
+
+/*sessao galeria*/
+.gallery {
+    padding: 120px 0;
+  }
+  
+  .gallery .title::after{
+    content: "De Imagens";
+ }
+ 
+  .gallery-images {
+    display: flex;
+    margin-right: -20px;
+    justify-content: center;
+    padding: 2%;
+    padding-top: 2%;
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+
+  }
+  
+  .gallery-images .img {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-right: 30px;
+  }
+
+
 /*  sessão Contato  */
 .contact .title::after{
     content: "Fale conosco";
@@ -446,7 +476,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .row .info .sub-title{
-    color: #333;
+    color: #7f0000;
 }
 .contact .contact-content .row ion-icon{
     font-size: 25px;
@@ -534,6 +564,9 @@ footer span a:hover{
         width: 350px;
         height: 350px;
     }
+    .img1{
+        display: none;
+    }
 }
 @media (max-width: 991px){
     .navbar .max-width{
@@ -604,6 +637,7 @@ footer span a:hover{
     footer{
         margin-top: 15px;
     }
+    
 }
 @media (max-width: 690px){
     .home .home-content .text-2{
@@ -617,6 +651,9 @@ footer span a:hover{
     }
     .services .serv-content .card {
         width:100%;
+    }
+    .gallery{
+        display:none;
     }
 }
 @media (max-width: 500px){

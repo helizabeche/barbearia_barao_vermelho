@@ -29,8 +29,7 @@ try {
     $totalPrecos = $resultado->fetch_assoc()['totalPrecos'];
 
             
-    // Consulta SQL para somar o preço dos agendamentos concluídos
-    //funcionaaaaaaaaaaaaa por favor 
+    // Consulta SQL para somar o preço dos agendamentos concluídos 
     $sql = "SELECT SUM(servicos.preco) AS totalConcluido FROM servicos
     INNER JOIN agendamentos ON servicos.id = agendamentos.servico
     WHERE agendamentos.status = 'concluido'";

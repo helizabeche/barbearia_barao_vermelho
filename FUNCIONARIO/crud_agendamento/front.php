@@ -259,6 +259,7 @@
                                             <th scope="col">Data</th>
                                             <th scope="col">Hora</th>
                                             <th scope="col">Profissional</th>
+                                            <th scope="col">Preço</th>
                                             <th scope="col">Status</th>
                                             <th scope="col">Ações</th>
                                         </tr>
@@ -275,6 +276,7 @@
                                             echo "<td>".$user_data['data']."</td>";
                                             echo "<td>".$user_data['hora']."</td>";
                                             echo "<td>".$user_data['profissional']."</td>";
+                                            echo "<td>".$user_data['preco']."</td>";
                                             echo "<td>".$user_data['status']."</td>";
                                             echo "<td>
                                             <a class='btn btn-sm btn-primary' href='edit.php?id=$user_data[id]'>

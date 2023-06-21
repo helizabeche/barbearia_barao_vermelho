@@ -16,6 +16,6 @@
             $resultDelete = $conexao->query($sqlDelete);
         }
     }
-    header('Location: sistema.php');
+    header('Location: crud_login.php.php');
    
 ?>

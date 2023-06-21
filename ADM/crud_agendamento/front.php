@@ -98,15 +98,15 @@
                         </a>
                     </li>
                     <li>
-                       <a href="">
-                            <span class="las la-user-alt"></span>
-                            <small>Profile</small>
+                       <a href="http://localhost/barbearia-barao/ADM/imprimir%20relatorios/relatorio_login.php">
+                            <span class="las la-clipboard-list"></span>
+                            <small>Relatórios login</small>
                         </a>
                     </li>
                     <li>
                        <a href="">
                             <span class="las la-envelope"></span>
-                            <small>Mailbox</small>
+                            <small>Mensagens</small>
                         </a>
                     </li>
                 </ul>
@@ -235,12 +235,7 @@
                         </form>
                         </div>
 
-                        <div class="relatorio">
-                            <form action="relatorio.php" method="post">
-                                <button type="submit">Gerar relatório PDF</button>
-                            </form>
-
-                        </div>
+               
 
                         <div class="browse">
                             <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar">

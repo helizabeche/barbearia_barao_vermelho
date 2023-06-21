@@ -25,8 +25,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
+    background: #111111;
 }
+
 
 h1{
   text-align: center;
@@ -131,7 +132,7 @@ h1{
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: #4CAF50;
+  background-color: #5267D9;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -181,11 +182,11 @@ h1{
     flex-wrap: wrap;}
    
 }
-
+    
     </style>
     <div class="container">
         <div class="form-image">
-            <img src="baraologo.png" alt="">
+            <img src="logo.png" alt="">
         </div>
         <div class="form">
             <form method="post" action="agendar.php">

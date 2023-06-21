@@ -39,21 +39,21 @@
                         </a>
                     </li>
                     <li>
-                       <a href="http://localhost/barbearia-barao/ADM/imprimir%20relatorios/relatorios.php" class="active">
+                       <a href="http://localhost/barbearia-barao/ADM/imprimir%20relatorios/relatorios.php" >
                             <span class="las la-clipboard-list"></span>
                             <small>Relatórios</small>
                         </a>
                     </li>
                     <li>
-                       <a href="">
-                            <span class="las la-shopping-cart"></span>
-                            <small>Orders</small>
+                       <a href="http://localhost/barbearia-barao/ADM/imprimir%20relatorios/relatorio_login.php.php" class="active">
+                            <span class="las la-clipboard-list"></span>
+                            <small>Relatórios login</small>
                         </a>
                     </li>
                     <li>
                        <a href="">
-                            <span class="las la-tasks"></span>
-                            <small>Tasks</small>
+                            <span class="las la-envelope"></span>
+                            <small>Mensagens</small>
                         </a>
                     </li>
 

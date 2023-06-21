@@ -29,7 +29,7 @@ else
 {
     $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
-    header('Location: sistema.php');
+    header('Location: http://localhost/barbearia-barao/ADM/crud_agendamento/front.php');
 }
 }
 else

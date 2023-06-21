@@ -38,12 +38,6 @@
                     </li>
                     <li>
                        <a href="">
-                            <span class="las la-user-alt"></span>
-                            <small>Profile</small>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="">
                             <span class="las la-envelope"></span>
                             <small>Mailbox</small>
                         </a>

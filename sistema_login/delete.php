@@ -16,6 +16,6 @@
             $resultDelete = $conexao->query($sqlDelete);
         }
     }
-    header('Location: sistema.php');
+    header('Location:http://localhost/barbearia-barao/ADM/crud_agendamento/front.php');
    
 ?>

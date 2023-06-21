@@ -22,12 +22,12 @@
         }
         else
         {
-            header('Location: sistema.php');
+            header('Location: crud_login.php');
         }
     }
     else
     {
-        header('Location: sistema.php');
+        header('Location: crud_login.php');
     }
 ?>
 <!DOCTYPE html>

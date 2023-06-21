@@ -67,7 +67,7 @@
                             <small>Relatórios</small>
                         </a>
                     </li>
-                       <a href="">
+                       <a href="http://localhost/barbearia-barao/ADM/imprimir%20relatorios/relatorio_login.php">
                             <span class="las la-clipboard-list"></span>
                             <small>Relatório login</small>
                         </a>
@@ -132,7 +132,13 @@
 
                     <div class="card">
                         <div class="card-head">
-                            <h2>107,200</h2>
+                                <?php                           
+                                // Consulta SQL para contar os registros na tabela "usuarios"
+                                $sql = "SELECT COUNT(*) AS totalUsuarios FROM usuarios";
+                                $resultado = $conexao->query($sql);
+                                $totalUsuarios = $resultado->fetch_assoc()['totalUsuarios']; 
+                                ?>
+                            <h2><?php echo $totalUsuarios; ?></h2>
                             <span class="las la-user-friends"></span>
                         </div>
                         <div class="card-progress">
@@ -143,44 +149,6 @@
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-head">
-                            <h2>340,230</h2>
-                            <span class="las la-eye"></span>
-                        </div>
-                        <div class="card-progress">
-                            <small>Page views</small>
-                            <div class="card-indicator">
-                                <div class="indicator two" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-head">
-                            <h2>$653,200</h2>
-                            <span class="las la-shopping-cart"></span>
-                        </div>
-                        <div class="card-progress">
-                            <small>Monthly revenue growth</small>
-                            <div class="card-indicator">
-                                <div class="indicator three" style="width: 65%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-head">
-                            <h2>47,500</h2>
-                            <span class="las la-envelope"></span>
-                        </div>
-                        <div class="card-progress">
-                            <small>New E-mails received</small>
-                            <div class="card-indicator">
-                                <div class="indicator four" style="width: 90%"></div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
 

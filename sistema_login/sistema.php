@@ -136,7 +136,7 @@
 
     function searchData()
     {
-        window.location = 'sistema.php?search='+search.value;
+        window.location = 'http://localhost/barbearia-barao/ADM/crud_agendamento/front.php?search='+search.value;
     }
 </script>
 </html>
