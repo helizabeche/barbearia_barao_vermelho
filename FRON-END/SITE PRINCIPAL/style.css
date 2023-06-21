@@ -572,6 +572,7 @@ footer span a:hover{
     .navbar .max-width{
         padding: 0 50px;
     }
+    
 }
 @media (max-width: 947px){
     .max-width{
@@ -651,6 +652,9 @@ footer span a:hover{
     }
     .services .serv-content .card {
         width:100%;
+    }
+    .img1{
+        display: none;
     }
     .gallery{
         display:none;

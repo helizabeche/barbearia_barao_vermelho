@@ -19,9 +19,9 @@
         
         <div class="side-content">
             <div class="profile">
-                <div class="profile-img bg-img" style="background-image: url(img/3.jpeg)"></div>
-                <h4>David Green</h4>
-                <small>Art Director</small>
+                <div class="profile-img bg-img" style="background-image: url(https://portalpopline.com.br/wp-content/uploads/2021/12/Rodrigo-Suricato-fala-sobre-a-glamourizacao-da-profissao-artistica-3-557x800.jpg)"></div>
+                <h4>ADMINISTRADOR 1</h4>
+                <small>área administrativa</small>
             </div>
 
             <div class="side-menu">
